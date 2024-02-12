@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.nav-flex {
+  position: sticky;
+  background-color: #f53f53;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 300px;
+  top: 0;
+}
+.sub-cat {
+  display: flex;
+  list-style: none;
+}
+.sub-cat li {
+  padding: 20px;
+  font-size: 13px;
+  color: white;
+}
+.Hero-flex {
+  display: flex;
+  background-color: #f53f53;
+  justify-content: center;
+  align-items: center;
+}
