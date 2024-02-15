@@ -1,4 +1,6 @@
 import React from "react";
+import purchaselist from "../assets/purchasedata.json";
+import CountUp from "react-countup";
 
 const Purchase = () => {
   return (
@@ -18,19 +20,19 @@ const Purchase = () => {
             </p>
             <ul className="purchase-flex">
               <li>
-                <p>2345</p>
+                <CountUp end={2536} />
                 <p>Happy Clients</p>
               </li>
               <li>
-                <p>6784</p>
+                <CountUp end={6784} />
                 <p>Total Projects</p>{" "}
               </li>
               <li>
-                <p>1058</p>
+                <CountUp end={1059} />
                 <p>Cup Coffees</p>{" "}
               </li>
               <li>
-                <p>12345</p>
+                <CountUp end={12239} />
                 <p>Ticket submitted</p>{" "}
               </li>
             </ul>
@@ -42,15 +44,23 @@ const Purchase = () => {
           <p>Purchase whatever you want</p>
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
-        <div className="purchaseplan">
-          <p>PDF</p>
-          <p>Who are in extremely love with eco friendly system.</p>
-          <div>
-            <p>$79.99</p>
-            <button>Purchase Now</button>
-          </div>
+        <div className="purchaselist-top">
+          {purchaselist.map(({ Name, Content, Price, id }) => (
+            <div className="purchaseplan" key={id}>
+              <p>{Name}</p>
+              <p>Who are in extremely love with eco friendly system.</p>
+              <div className="purchaseprice">
+                <p>
+                  <span className="dollorsmall">$</span>
+                  {Price}
+                </p>
+                <button>Purchase Now</button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
+      <div className="section"></div>
     </div>
   );
 };

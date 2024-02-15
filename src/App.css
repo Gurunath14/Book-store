@@ -40,10 +40,10 @@
   color: white;
 }
 .Hero-flex {
-  padding: 20px 75px;
+  padding: 30px;
   display: flex;
   background-color: #f53f53;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .herocontent-flex {
@@ -149,6 +149,7 @@
 .purchase-flex li {
   background-color: white;
   padding: 40px;
+  width: 240px;
   border-radius: 10px;
   box-shadow: 0px 10px 50px 0px rgba(245, 63, 81, 0.3);
 }
@@ -168,23 +169,71 @@
   flex-direction: column;
   padding-top: 100px;
   justify-content: center;
-  align-items: center;
+  gap: 80px;
   text-align: center;
 }
+.purchaselist-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .purchaseplan {
   display: flex;
   border: 1px solid #eeeeee;
   flex-direction: column;
+  width: 28%;
+  transition: 0.5s;
+}
+.purchaseplan:hover {
+  cursor: pointer;
+  transform: translateY(10px);
+  transition: 0.5s;
+  box-shadow: 0px 10px 50px 0px rgba(245, 63, 81, 0.3);
 }
 .purchaseplan > :first-child {
   padding: 20px;
   font-size: 18px;
   font-weight: bold;
+  background-color: #fbfcff;
   border-bottom: 1px solid #eeeeee;
 }
 .purchaseplan > :nth-child(2) {
+  padding: 40px;
+  font-size: 14px;
   color: #777777;
 }
+.purchaseprice {
+  background-color: #fbfcff;
+  position: relative;
+  padding: 40px;
+}
+.purchaseprice button {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #222222;
+  color: white;
+  padding: 14px 60px;
+  border-radius: 50px;
+  font-size: 14px;
+  border-top: 1px solid #eeeeee;
+}
+
+.purchaseprice > :first-child {
+  font-size: 60px;
+  font-weight: 300;
+  padding: 10px;
+}
+.dollorsmall {
+  font-size: 25px;
+  position: absolute;
+  left: 80px;
+  top: 60px;
+}
+.section {
+  padding: 80px 0px;
+}
+
 .inner-purchaselist :first-child {
   font-size: 36px;
   font-weight: bold;
