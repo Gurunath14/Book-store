@@ -1,23 +1,27 @@
 [
   {
+    "id": 1,
     "image": "https://themewagon.github.io/book/img/c2.jpg",
     "name": "Breakthrough Thinking",
     "price": "$25",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est    doloribus vitae tenetur vel molestias explicabo ducimus ."
   },
   {
+    "id": 2,
     "image": "https://themewagon.github.io/book/img/c1.jpg",
     "name": "Breakthrough Thinking",
     "price": "$25",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est    doloribus vitae tenetur vel molestias explicabo ducimus ."
   },
   {
+    "id": 3,
     "image": "https://themewagon.github.io/book/img/c3.jpg",
     "name": "Breakthrough Thinking",
     "price": "$25",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est    doloribus vitae tenetur vel molestias explicabo ducimus ."
   },
   {
+    "id": 4,
     "image": "https://themewagon.github.io/book/img/c1.jpg",
     "name": "Breakthrough Thinking",
     "price": "$25",

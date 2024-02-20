@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logoimg from "/Logoimg.svg";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
 const Navbar = () => {
   const [colorchange, setcolorchange] = useState(false);
+  const cartselector = useSelector((state) => state.cart.item);
   useEffect(() => {
     onscroll();
   });
@@ -32,6 +34,7 @@ const Navbar = () => {
           <li>
             <a href="#course">Course</a>
           </li>
+          <li>Cart({cartselector.length})</li>
         </ul>
       </div>
     </div>

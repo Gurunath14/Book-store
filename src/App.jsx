@@ -7,19 +7,23 @@ import Purchase from "./Components/Purchase";
 import Bookshelf from "./Components/Bookshelf";
 import Avaliable from "./Components/Avaliable";
 import Review from "./Components/Reviews";
+import { Provider } from "react-redux";
+import appStore from "./StateHandler/appStrore";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Author />
-      <Purchase />
-      <Bookshelf />
-      <Avaliable />
-      <Review />
+      <Provider store={appStore}>
+        <Navbar />
+        <Hero />
+        <Author />
+        <Purchase />
+        <Bookshelf />
+        <Avaliable />
+        <Review />
+      </Provider>
     </>
   );
 }

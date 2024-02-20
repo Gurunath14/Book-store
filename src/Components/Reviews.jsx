@@ -31,7 +31,7 @@ const Review = () => {
           className="mySwiper"
         >
           {review.map((mapdata, index) => (
-            <SwiperSlide>
+            <SwiperSlide key={mapdata.id}>
               <div className="review-border">
                 <img src={mapdata.image} />
                 <p>{mapdata.review}</p>

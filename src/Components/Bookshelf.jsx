@@ -7,8 +7,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Pagination, Navigation } from "swiper/modules";
+import { useDispatch } from "react-redux";
+import { additem } from "../StateHandler/cartslice";
 
 const Bookshelf = () => {
+  const dispatch = useDispatch();
+  const bookselected = (datagot) => {
+    dispatch(additem(datagot));
+  };
+
   return (
     <div id="course">
       <div className="bookself-top">
@@ -27,11 +34,16 @@ const Bookshelf = () => {
             modules={[Keyboard, Pagination, Navigation]}
             className="mySwiper"
           >
-            {selfdata.map((mapdata, index) => (
+            {selfdata.map((mapdata) => (
               <div>
-                <SwiperSlide key={index}>
+                <SwiperSlide>
                   <img className="bookself-img" src={mapdata.image} />
-                  <button className="bookself-btn">For Sale</button>
+                  <button
+                    className="bookself-btn"
+                    onClick={() => bookselected(mapdata)}
+                  >
+                    For Sale
+                  </button>
                   <p className="self-price">
                     {mapdata.name} <span> {mapdata.price}</span>
                   </p>
