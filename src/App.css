@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
 .nav-flex {
   position: fixed;
   z-index: 2;
@@ -38,6 +45,12 @@
   padding: 20px;
   font-size: 13px;
   color: white;
+  transition: 0.5s;
+}
+.sub-cat li:hover {
+  cursor: pointer;
+  background-color: #f53f51;
+  transition: 0.6s;
 }
 .Hero-flex {
   padding: 30px;
@@ -241,4 +254,167 @@
 .inner-purchaselist :last-child {
   font-size: 14px;
   color: #777777;
+}
+.bookself-top {
+  padding: 100px 0px;
+  text-align: center;
+  background-color: #f9f9ff;
+}
+.bookself-top > :nth-child(1) {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 5px;
+}
+.bookself-top > :nth-child(2) {
+  color: #777777;
+  font-size: 14px;
+  padding: 5px;
+}
+.bookself-img {
+  padding: 20px 0px;
+  position: relative;
+}
+.bookself-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  right: 12%;
+  background-color: #f53f51;
+  color: white;
+  padding: 8px 36px;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+}
+.self-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.self-price span {
+  color: #f53f51;
+}
+.self-dis {
+  line-height: 22px;
+  text-align: justify;
+  padding: 10px 50px;
+  font-size: 14px;
+  color: #777777;
+  font-weight: 300;
+}
+.lib {
+  padding: 30px 20px;
+}
+.avaliable-bg {
+  padding: 100px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f44f31;
+}
+.avaliable-bg > :nth-child(1) {
+  font-size: 36px;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+}
+.avaliable-bg > :nth-child(2) {
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  padding: 15px;
+}
+.mobilestore {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 25px;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.store-text > :nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 5px;
+}
+.store-text > :nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0px 5px;
+}
+.mobilestore-top {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+}
+/* .mobilestore:hover {
+  background-color: #f44f31;
+  color: white;
+  transition: 0.3s;
+} */
+.Review-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Review-text > :nth-child(1) {
+  font-size: 32px;
+  font-weight: 600;
+}
+.Review-text > :nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777777;
+}
+
+.review-border {
+  gap: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+.review-border > :nth-child(2) {
+  padding: 15px;
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+  font-size: 100;
+}
+.review-border > :nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+}
+.review-border > :nth-child(4) {
+  font-size: 14;
+  color: #777777;
+  font-weight: 300;
+}
+.swiper-pagination {
+  position: relative !important;
+  padding: 20px;
+}
+.review-scroll {
+  text-align: center;
+  padding: 40px;
+  padding-top: 60px;
+}
+.swiper-pagination-bullet {
+  border-radius: 0px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #f44f31 !important;
 }

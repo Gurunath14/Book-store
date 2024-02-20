@@ -17,11 +17,21 @@ const Navbar = () => {
       <div className={colorchange ? " nav-flex nav-scrolled" : "nav-flex"}>
         <img src={logoimg} />
         <ul className="sub-cat">
-          <li>Home</li>
-          <li>About</li>
-          <li>Fact</li>
-          <li>Price</li>
-          <li>Course</li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#fact">Fact</a>
+          </li>
+          <li>
+            <a href="#price">Price</a>
+          </li>
+          <li>
+            <a href="#course">Course</a>
+          </li>
         </ul>
       </div>
     </div>

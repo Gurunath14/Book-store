@@ -1,7 +1,7 @@
 import bigbook from "/Bookhero.svg";
 const Hero = () => {
   return (
-    <div className="Hero-flex">
+    <div className="Hero-flex" id="home">
       <div className="herocontent-flex">
         <p className="Author">AUTHOR: TRAVOR JAMES</p>
         <p className="Hero-Bigtext">NEW ADVENTURE</p>

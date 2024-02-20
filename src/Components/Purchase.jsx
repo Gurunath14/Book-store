@@ -31,7 +31,7 @@ const Purchase = () => {
 
   return (
     <div>
-      <div className="purchase-rel">
+      <div className="purchase-rel" id="fact">
         <img
           className="travelimg"
           src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg"
@@ -65,7 +65,7 @@ const Purchase = () => {
           </div>
         </div>
       </div>
-      <div className="purchaselist-flex">
+      <div className="purchaselist-flex" id="price">
         <div className="inner-purchaselist">
           <p>Purchase whatever you want</p>
           <p>Who are in extremely love with eco friendly system.</p>

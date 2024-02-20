@@ -3,7 +3,7 @@ import PngSab from "../assets/Bigboy.svg";
 
 const Author = () => {
   return (
-    <div>
+    <div id="about">
       <div className="author-flex">
         <img src={PngSab} className="boyimage" />
         <div className="author-total">
