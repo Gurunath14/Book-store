@@ -1,4 +1,3 @@
-import React from "react";
 import andriod from "../assets/Icon.png";
 import apple from "../assets/Vector.png";
 
@@ -8,7 +7,7 @@ const Avaliable = () => {
       <div className="avaliable-bg">
         <p>Download Our App for all Platform</p>
         <p>
-          It won't be a bigger problem to find one video game lover in your
+          It wont be a bigger problem to find one video game lover in your
           neighbor. Since the introduction of Virtual Game, it has been
           achieving great heights so far as its popularity and technological
           advancement are concerned.

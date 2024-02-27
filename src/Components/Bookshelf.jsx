@@ -34,8 +34,8 @@ const Bookshelf = () => {
             modules={[Keyboard, Pagination, Navigation]}
             className="mySwiper"
           >
-            {selfdata.map((mapdata) => (
-              <div>
+            {selfdata.map((mapdata, index) => (
+              <div key={index}>
                 <SwiperSlide>
                   <img className="bookself-img" src={mapdata.image} />
                   <button

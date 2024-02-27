@@ -1,4 +1,3 @@
-import React from "react";
 import PngSab from "../assets/Bigboy.svg";
 
 const Author = () => {

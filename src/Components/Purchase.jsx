@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import purchaselist from "../assets/purchasedata.json";
 import CountUp from "react-countup";
 
@@ -74,7 +74,7 @@ const Purchase = () => {
           {purchaselist.map(({ Name, Content, Price, id }) => (
             <div className="purchaseplan" key={id}>
               <p>{Name}</p>
-              <p>Who are in extremely love with eco friendly system.</p>
+              <p>{Content}</p>
               <div className="purchaseprice">
                 <p>
                   <span className="dollorsmall">$</span>

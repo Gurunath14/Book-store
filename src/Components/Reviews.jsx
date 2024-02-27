@@ -21,7 +21,7 @@ const Review = () => {
           spaceBetween={40}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -30,7 +30,7 @@ const Review = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {review.map((mapdata, index) => (
+          {review.map((mapdata) => (
             <SwiperSlide key={mapdata.id}>
               <div className="review-border">
                 <img src={mapdata.image} />
